@@ -479,12 +479,12 @@ body {
 }
 pre,
 .highlight {
-  background: highlight-background;
+  background: #1d1f21;
   margin: 20px 0;
   padding: 15px;
   overflow: auto;
   font-size: 13px;
-  color: highlight-foreground;
+  color: #c5c8c6;
   line-height: 1.6;
 }
 .highlight .gutter pre,
@@ -522,7 +522,7 @@ pre code {
 }
 .highlight figcaption {
   font-size: 0.85em;
-  color: highlight-comment;
+  color: #969896;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -549,7 +549,7 @@ pre code {
   border-style: solid;
   border-color: #ccc;
   border-width: 1px 0;
-  background: highlight-background;
+  background: #1d1f21;
   padding: 15px 40px 15px 15px;
 }
 .gist .gist-file {
@@ -575,8 +575,8 @@ pre code {
   border: none;
 }
 .gist .gist-file .gist-meta {
-  background: highlight-background;
-  color: highlight-comment;
+  background: #1d1f21;
+  color: #969896;
   font: 13px Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
   text-shadow: 0 0;
   padding: 0;
@@ -591,7 +591,7 @@ pre code {
   text-decoration: underline;
 }
 pre .comment {
-  color: highlight-comment;
+  color: #969896;
 }
 pre .variable,
 pre .attribute,
@@ -605,7 +605,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: highlight-red;
+  color: #c66;
 }
 pre .number,
 pre .preprocessor,
@@ -613,11 +613,11 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: highlight-orange;
+  color: #de935f;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: highlight-green;
+  color: #b5bd68;
 }
 pre .string,
 pre .value,
@@ -625,11 +625,11 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: highlight-green;
+  color: #b5bd68;
 }
 pre .title,
 pre .css .hexcolor {
-  color: highlight-aqua;
+  color: #8abeb7;
 }
 pre .function,
 pre .python .decorator,
@@ -639,11 +639,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: highlight-blue;
+  color: #81a2be;
 }
 pre .keyword,
 pre .javascript .function {
-  color: highlight-purple;
+  color: #b294bb;
 }
 .full-image.full-image.full-image {
   border: none;
@@ -1528,7 +1528,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5dda6c;
+  background: #5813e4;
 }
 .sidebar-nav {
   margin: 0 0 20px;
