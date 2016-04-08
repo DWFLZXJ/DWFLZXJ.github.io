@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dwflzxj.github.io/"/>
-  <updated>2016-04-08T09:13:25.967Z</updated>
+  <updated>2016-04-08T09:23:10.904Z</updated>
   <id>http://dwflzxj.github.io/</id>
   
   <author>
@@ -16,13 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>如何才能写出没有Bug的程序</title>
     <link href="http://dwflzxj.github.io/2016/04/08/%E5%A6%82%E4%BD%95%E6%89%8D%E8%83%BD%E5%86%99%E5%87%BA%E6%B2%A1%E6%9C%89Bug%E7%9A%84%E7%A8%8B%E5%BA%8F/"/>
     <id>http://dwflzxj.github.io/2016/04/08/如何才能写出没有Bug的程序/</id>
-    <published>2016-04-08T09:13:25.967Z</published>
-    <updated>2016-04-08T09:13:25.967Z</updated>
+    <published>2016-04-08T07:21:32.000Z</published>
+    <updated>2016-04-08T09:23:10.904Z</updated>
     
-    <content type="html">&lt;p&gt;我是在学校图书馆学会编程的。&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;以下为知乎上看到的一段回答，印象深刻。也许任何一个程序员写出第一个可执行的代码的时候都是如此的感受吧&quot;&gt;&lt;a href=&quot;#以下为知乎上看到的一段回答，印象深刻。也许任何一个程序员写出第一个可执行的代码的时候都是如此的感受吧&quot; class=&quot;headerlink&quot; title=&quot;以下为知乎上看到的一段回答，印象深刻。也许任何一个程序员写出第一个可执行的代码的时候都是如此的感受吧~&quot;&gt;&lt;/a&gt;以下为知乎上看到的一段回答，印象深刻。也许任何一个程序员写出第一个可执行的代码的时候都是如此的感受吧~&lt;/h1&gt;&lt;p&gt;我是在学校图书馆学会编程的。&lt;/p&gt;
 &lt;p&gt;我花了很长时间看了很多关于C语言编程的书，却始终没有写过一行代码。&lt;br&gt;我一直在怀疑这些书中写的东西是不是真的。真的只要几行代码就可以在屏幕画出各种几何形状？真的可以写一些代码就能编出一个能跟人下棋的程序？&lt;br&gt;我当然没有那么愚昧，真的在怀疑这些事情本身。我只是隐约觉得，如果编程这件事这么神奇，也许将会改变我的人生。而那段时间我对自己很绝望，不相信自己还会有美好的未来。所以我怀疑的其实是自己，我真的可以写程序完成这些神奇的事情吗？所以我看了很多编程的书，却始终没有勇气到电脑上真正去写一行代码。&lt;/p&gt;
 &lt;p&gt;最后，当我花了一块钱，在学校的计算机房买了一个小时的上机时间决定写下自己人生的第一个程序的时候，感觉自己像是去朝圣，内心中的感受大约和藏传佛教的信徒磕了几千里的等身长头最终看到布达拉宫一样。&lt;br&gt;为了这一刻，我把一个简单的程序在草稿纸上反复写了无数遍，而在那台386电脑上输入了这段小小的程序后，我又认真的检查了每一个字符。&lt;br&gt;当我按下回车键，运行程序的时候，仿佛在触摸某种神迹。&lt;br&gt;程序顺利运行，完美地呈现了这段代码最初的期望，那一刻，我泪流满面，浑身颤抖，我觉得自己进入了一个新的世界。&lt;/p&gt;
 &lt;p&gt;那是我写的第一个程序，那是我写过的唯一一个没有BUG的程序。&lt;/p&gt;
@@ -30,11 +30,14 @@
     
     <summary type="html">
     
-      &lt;p&gt;我是在学校图书馆学会编程的。&lt;/p&gt;
-&lt;p&gt;我花了很长时间看了很多关于C语言编程的书，却始终没有写过一行代码。&lt;br&gt;我一直在怀疑这些书中写的东西是不是真的。真的只要几行代码就可以在屏幕画出各种几何形状？真的可以写一些代码就能编出一个能跟人下棋的程序？&lt;br&gt;我当然没有那么
+      &lt;h1 id=&quot;以下为知乎上看到的一段回答，印象深刻。也许任何一个程序员写出第一个可执行的代码的时候都是如此的感受吧&quot;&gt;&lt;a href=&quot;#以下为知乎上看到的一段回答，印象深刻。也许任何一个程序员写出第一个可执行的代码的时候都是如此的感受吧&quot; class=&quot;headerlink&quot;
     
     </summary>
     
+      <category term="摘抄" scheme="http://dwflzxj.github.io/categories/%E6%91%98%E6%8A%84/"/>
+    
+    
+      <category term="博客，文章" scheme="http://dwflzxj.github.io/tags/%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%96%87%E7%AB%A0/"/>
     
   </entry>
   
