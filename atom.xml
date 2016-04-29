@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dwflzxj.github.io/"/>
-  <updated>2016-04-08T09:23:10.904Z</updated>
+  <updated>2016-04-29T15:32:17.909Z</updated>
   <id>http://dwflzxj.github.io/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OurLoveStory</title>
+    <link href="http://dwflzxj.github.io/2016/04/29/OurLoveStory/"/>
+    <id>http://dwflzxj.github.io/2016/04/29/OurLoveStory/</id>
+    <published>2016-04-29T15:30:00.000Z</published>
+    <updated>2016-04-29T15:32:17.909Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://dwflzxj.github.io/Love/&quot;&gt;http://dwflzxj.github.io/Love/&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://dwflzxj.github.io/Love/&quot;&gt;http://dwflzxj.github.io/Love/&lt;/a&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Private" scheme="http://dwflzxj.github.io/categories/Private/"/>
+    
+    
+      <category term="Me，Love" scheme="http://dwflzxj.github.io/tags/Me%EF%BC%8CLove/"/>
+    
+  </entry>
   
   <entry>
     <title>如何才能写出没有Bug的程序</title>
