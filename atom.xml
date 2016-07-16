@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dwflzxj.github.io/"/>
-  <updated>2016-07-16T15:24:12.798Z</updated>
+  <updated>2016-07-16T17:10:46.458Z</updated>
   <id>http://dwflzxj.github.io/</id>
   
   <author>
@@ -20,15 +20,53 @@
     <link href="http://dwflzxj.github.io/2016/07/16/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     <id>http://dwflzxj.github.io/2016/07/16/如何利用Hexo和GitHub搭建一个静态博客/</id>
     <published>2016-07-16T15:30:00.000Z</published>
-    <updated>2016-07-16T15:24:12.798Z</updated>
+    <updated>2016-07-16T17:10:46.458Z</updated>
     
-    <content type="html">&lt;p&gt;先测试&lt;/p&gt;
+    <content type="html">&lt;h3 id=&quot;闲扯&quot;&gt;&lt;a href=&quot;#闲扯&quot; class=&quot;headerlink&quot; title=&quot;闲扯&quot;&gt;&lt;/a&gt;闲扯&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;博客搭了有半年了，基本没怎么用过突然觉得还是要用起来才行啊。因为这该死的语言组织能力，写博客这种方式应该是一种不错的锻炼方式。我目前的叙述方式基本是大脑里冒出来什么就写什么的叙事风格十分杂乱。还是没有摆脱小学生作文的水平的说。。。&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006g6mbagw1f5w8iyki1jj30240270si.jpg&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;计划&quot;&gt;&lt;a href=&quot;#计划&quot; class=&quot;headerlink&quot; title=&quot;计划&quot;&gt;&lt;/a&gt;计划&lt;/h3&gt;&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;将会在博客中陆续更新一些技术类的文章争取原创，由于实力有限所以也是一种鞭策吧。毕竟如果要写出来分享的话，才会有加把劲的觉悟啊。最好的学习方法就是把要学的东西讲给别人听不是么。&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006g6mbagw1f5w8ixs1u4g302101tjr7.gif&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;影评歌曲分享也是比较喜欢的，终于可以在自己的博客写影评不是很装逼的一件事吗哈哈&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006g6mbagw1f5w8ixwi3pj3028028we9.jpg&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;github千万别完蛋了啊，哥的东西可都交给你了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;言归正传&quot;&gt;&lt;a href=&quot;#言归正传&quot; class=&quot;headerlink&quot; title=&quot;言归正传&quot;&gt;&lt;/a&gt;言归正传&lt;/h3&gt;&lt;p&gt;本来打算用farbox玩博客的，简单方便还有多种模板。装个farbox可以本地markdown编辑完博客直接同步。对于只是想玩博客的同学来说还是不错的选择。只是需要收费，作为一个苦逼程序员玩个博客还要收钱太不geek了。所以最终还是选择了hexo和github搭建博客的方式。&lt;/p&gt;
+&lt;h4 id=&quot;用github和hexo搭建博客有两个优点&quot;&gt;&lt;a href=&quot;#用github和hexo搭建博客有两个优点&quot; class=&quot;headerlink&quot; title=&quot;用github和hexo搭建博客有两个优点&quot;&gt;&lt;/a&gt;用github和hexo搭建博客有两个优点&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;免费&lt;/li&gt;
+&lt;li&gt;可以将github运用到实际中，很多人并不知道如何使用github。在网络上的各种教程都看过之后也是一知半解。实际操作一遍是大有裨益的。毕竟不学一下就搭不起博客了，瞬间就有动力了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;如何搭建&quot;&gt;&lt;a href=&quot;#如何搭建&quot; class=&quot;headerlink&quot; title=&quot;如何搭建&quot;&gt;&lt;/a&gt;如何搭建&lt;/h4&gt;&lt;p&gt;如何开始hexo搭建，可以参照这篇文章&lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;hexo你的博客&lt;/strong&gt;&lt;/a&gt;网上还有很多其他的教程，基本照着做一遍就可以搭建完成了。重新造轮子没有太大的意义就不赘叙了。如果还有问题可以看&lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Hexo官网&lt;/strong&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;完成了以上的操作你可能还需要知道一些内容。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;搭建完成博客之后当然就是写博客了，如何很好的利用这个博客需要知道以下的知识。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;h5 id=&quot;什么是hexo呢？&quot;&gt;&lt;a href=&quot;#什么是hexo呢？&quot; class=&quot;headerlink&quot; title=&quot;什么是hexo呢？&quot;&gt;&lt;/a&gt;什么是hexo呢？&lt;/h5&gt;&lt;p&gt;Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;什么是markdown？&quot;&gt;&lt;a href=&quot;#什么是markdown？&quot; class=&quot;headerlink&quot; title=&quot;什么是markdown？&quot;&gt;&lt;/a&gt;什么是markdown？&lt;/h5&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）和亚伦·斯沃茨（Aaron Swartz）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。&lt;/p&gt;
+&lt;p&gt;为什么需要知道markdown？其实不知道markdown也可以写博客。但是这么方便的标记语言可以使你更加注重内容而不用花太多时间在排版上节省了不少的时间。作为一个刚学习markdown不久的新人，我认为这是一款非常容易上手的标记语言。只需要网上百度大致的语法加上一款markdown编辑器就搞定了。我目前用的是有道云笔记（网易粉的选择）&lt;img src=&quot;http://note.youdao.com/favicon.ico&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;h5 id=&quot;何使用git&quot;&gt;&lt;a href=&quot;#何使用git&quot; class=&quot;headerlink&quot; title=&quot;何使用git?&quot;&gt;&lt;/a&gt;何使用git?&lt;/h5&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137402760310626208b4f695940a49e5348b689d095fc000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git简明教程&lt;/a&gt;&lt;br&gt;作为世界上最先进的分布式版本控制系统没道理不了解一下，即使不是程序员。用来保存工作中的文档也是很有用的。而且很高端有没有。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;使用效果&quot;&gt;&lt;a href=&quot;#使用效果&quot; class=&quot;headerlink&quot; title=&quot;使用效果&quot;&gt;&lt;/a&gt;使用效果&lt;/h3&gt;&lt;h4 id=&quot;编辑&quot;&gt;&lt;a href=&quot;#编辑&quot; class=&quot;headerlink&quot; title=&quot;编辑&quot;&gt;&lt;/a&gt;编辑&lt;/h4&gt;&lt;p&gt;用有道云编辑之后将md文件放到Hexo\source\_posts路径下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006g6mbagw1f5w8q8cwfrj311q0k5aiz.jpg&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;发布&quot;&gt;&lt;a href=&quot;#发布&quot; class=&quot;headerlink&quot; title=&quot;发布&quot;&gt;&lt;/a&gt;发布&lt;/h4&gt;&lt;p&gt;gitbash执行&lt;/p&gt;
+&lt;p&gt;hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo deploy &amp;amp;&amp;amp; hexo clean&lt;/p&gt;
+&lt;p&gt;hexo clean : 清理 database 和 /public目录， /public目录里是生成的静态文件数据。&lt;/p&gt;
+&lt;p&gt;hexo generaet : 简写是 “hexo g” 命令是用来生成静态页面的 会创建 /public目录静态页面数据都在这个文件夹里。&lt;/p&gt;
+&lt;p&gt;hexo deploy ： 一键部署命令上面在 _config.yml文件中配置了部署信息。这个命令会帮助你一键部署。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006g6mbagw1f5w8q8rpnqj30ep0kathn.jpg&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;结尾&quot;&gt;&lt;a href=&quot;#结尾&quot; class=&quot;headerlink&quot; title=&quot;结尾&quot;&gt;&lt;/a&gt;结尾&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;话说这些图片是怎么来的呢？实践发现最好的图床还是新浪微博了。所以我的新浪微博就成了图床了&lt;/strong&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;先测试&lt;/p&gt;
-
+      &lt;h3 id=&quot;闲扯&quot;&gt;&lt;a href=&quot;#闲扯&quot; class=&quot;headerlink&quot; title=&quot;闲扯&quot;&gt;&lt;/a&gt;闲扯&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;博客搭了有半年了，基本没怎么用过突然觉得还是要用起来才行啊。因为这该死的语言组织能力，写博客这种方式应该是一种不错的锻炼方式。我目
     
     </summary>
     
@@ -44,15 +82,15 @@
     <link href="http://dwflzxj.github.io/2016/04/29/OurLoveStory/"/>
     <id>http://dwflzxj.github.io/2016/04/29/OurLoveStory/</id>
     <published>2016-04-29T15:30:00.000Z</published>
-    <updated>2016-04-29T15:32:17.909Z</updated>
+    <updated>2016-07-16T15:32:45.695Z</updated>
     
     <content type="html">&lt;p&gt;&lt;a href=&quot;http://dwflzxj.github.io/Love/&quot;&gt;http://dwflzxj.github.io/Love/&lt;/a&gt;&lt;/p&gt;
-</content>
+&lt;h1 id=&quot;链接失效-404-not-found了&quot;&gt;&lt;a href=&quot;#链接失效-404-not-found了&quot; class=&quot;headerlink&quot; title=&quot;链接失效 404 not found了&quot;&gt;&lt;/a&gt;链接失效 404 not found了&lt;/h1&gt;&lt;h6 id=&quot;什么原因呢-因为Love文件夹是我私自往http-dwflzxj-github-io-仓库上传的-hexo自动生成静态页部署的时候会将其删除&quot;&gt;&lt;a href=&quot;#什么原因呢-因为Love文件夹是我私自往http-dwflzxj-github-io-仓库上传的-hexo自动生成静态页部署的时候会将其删除&quot; class=&quot;headerlink&quot; title=&quot;什么原因呢 因为Love文件夹是我私自往http://dwflzxj.github.io/仓库上传的 hexo自动生成静态页部署的时候会将其删除&quot;&gt;&lt;/a&gt;什么原因呢 因为Love文件夹是我私自往&lt;a href=&quot;http://dwflzxj.github.io/仓库上传的&quot;&gt;http://dwflzxj.github.io/仓库上传的&lt;/a&gt; hexo自动生成静态页部署的时候会将其删除&lt;/h6&gt;&lt;h6 id=&quot;暂时没有想到怎么解决就先这样啦&quot;&gt;&lt;a href=&quot;#暂时没有想到怎么解决就先这样啦&quot; class=&quot;headerlink&quot; title=&quot;暂时没有想到怎么解决就先这样啦&quot;&gt;&lt;/a&gt;暂时没有想到怎么解决就先这样啦&lt;/h6&gt;</content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;a href=&quot;http://dwflzxj.github.io/Love/&quot;&gt;http://dwflzxj.github.io/Love/&lt;/a&gt;&lt;/p&gt;
-
+&lt;h1 id=&quot;链接失效-404-not-found了&quot;&gt;&lt;a href=&quot;#链接失效-404-not-found
     
     </summary>
     
