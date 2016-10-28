@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dwflzxj.github.io/"/>
-  <updated>2016-10-28T16:52:41.150Z</updated>
+  <updated>2016-10-28T17:00:18.523Z</updated>
   <id>http://dwflzxj.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>C#巩固笔记</title>
-    <link href="http://dwflzxj.github.io/2016/10/28/C#%E5%B7%A9%E5%9B%BA%E7%AC%94%E8%AE%B0/"/>
-    <id>http://dwflzxj.github.io/2016/10/28/C#巩固笔记/</id>
+    <title>CSharp巩固笔记</title>
+    <link href="http://dwflzxj.github.io/2016/10/28/CSharp%E5%B7%A9%E5%9B%BA%E7%AC%94%E8%AE%B0/"/>
+    <id>http://dwflzxj.github.io/2016/10/28/CSharp巩固笔记/</id>
     <published>2016-10-27T21:43:32.000Z</published>
-    <updated>2016-10-28T16:52:41.150Z</updated>
+    <updated>2016-10-28T17:00:18.523Z</updated>
     
     <content type="html">&lt;h2 id=&quot;委托、事件和匿名方法&quot;&gt;&lt;a href=&quot;#委托、事件和匿名方法&quot; class=&quot;headerlink&quot; title=&quot;委托、事件和匿名方法&quot;&gt;&lt;/a&gt;委托、事件和匿名方法&lt;/h2&gt;&lt;h4 id=&quot;委托&quot;&gt;&lt;a href=&quot;#委托&quot; class=&quot;headerlink&quot; title=&quot;委托&quot;&gt;&lt;/a&gt;委托&lt;/h4&gt;&lt;p&gt;1.委托是十分棘手的概念，好多使用C#的程序员都不理解委托。如果不常使用委托很快就会忘记委托是什么含义。看到含有委托的代码也就看不明白了。&lt;/p&gt;
 &lt;p&gt;2.委托的申明指定了一个返回类型和一个参数列表。定义了委托就可以申明该委托类型的变量。接着把这个变量初始化为与委托有相同返回类型和参数列表的函数引用。之后用该变量调用这个函数。（变量调用函数）委托变量还可以被作为参数传递给一个函数。这样，该函数就可以使用委托调用它引用的任何函数（或者理解为使用该变量去调用）。&lt;br&gt;示例使用委托访问两个函数中的一个。&lt;/p&gt;
