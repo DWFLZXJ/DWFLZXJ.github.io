@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dwflzxj.github.io/"/>
-  <updated>2016-10-28T17:48:06.395Z</updated>
+  <updated>2016-11-27T14:57:25.713Z</updated>
   <id>http://dwflzxj.github.io/</id>
   
   <author>
@@ -14,6 +14,119 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cSharp中获取服务器IP客户端IP等详细说明</title>
+    <link href="http://dwflzxj.github.io/2016/11/27/cSharp%E4%B8%AD%E8%8E%B7%E5%8F%96%E6%9C%8D%E5%8A%A1%E5%99%A8IP%E5%AE%A2%E6%88%B7%E7%AB%AFIP%E7%AD%89%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E/"/>
+    <id>http://dwflzxj.github.io/2016/11/27/cSharp中获取服务器IP客户端IP等详细说明/</id>
+    <published>2016-11-27T14:00:00.000Z</published>
+    <updated>2016-11-27T14:57:25.713Z</updated>
+    
+    <content type="html">&lt;p&gt;客户端ip: &lt;/p&gt;
+&lt;p&gt;Request.ServerVariables.Get(“Remote_Addr”).ToString(); &lt;/p&gt;
+&lt;p&gt;客户端主机名:&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables.Get(“Remote_Host”).ToString(); &lt;/p&gt;
+&lt;p&gt;客户端浏览器IE：&lt;/p&gt;
+&lt;p&gt;Request.Browser.Browser; &lt;/p&gt;
+&lt;p&gt;客户端浏览器 版本号：&lt;/p&gt;
+&lt;p&gt;Request.Browser.MajorVersion;//&lt;/p&gt;
+&lt;p&gt;客户端操作系统：&lt;/p&gt;
+&lt;p&gt;Request.Browser.Platform; &lt;/p&gt;
+&lt;p&gt;服务器ip: &lt;/p&gt;
+&lt;p&gt;Request.ServerVariables.Get(“Local_Addr”).ToString(); &lt;/p&gt;
+&lt;p&gt;服务器名：&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables.Get(“Server_Name”).ToString();&lt;/p&gt;
+&lt;p&gt;如果你想进一步了解ServerVariables，可以用&lt;/p&gt;
+&lt;p&gt;foreach(String o in Request.ServerVariables){&lt;br&gt;  Response.Write(o+”=”+Request.ServerVariables[o]+”&lt;br&gt;“);&lt;br&gt;} &lt;/p&gt;
+&lt;p&gt;获取客户端IP方法&lt;/p&gt;
+&lt;p&gt; public string GetIP()&lt;br&gt;     {&lt;br&gt;         string uip = “”;&lt;br&gt;         if (HttpContext.Current.Request.ServerVariables[“HTTP_VIA”] != null)&lt;br&gt;         {&lt;br&gt;             uip = HttpContext.Current.Request.ServerVariables[“HTTP_X_FORWARDED_FOR”].ToString();&lt;br&gt;         }&lt;br&gt;         else&lt;br&gt;         {&lt;br&gt;             uip = HttpContext.Current.Request.ServerVariables[“REMOTE_ADDR”].ToString();&lt;br&gt;         }&lt;br&gt;         return uip;&lt;br&gt;     }&lt;/p&gt;
+&lt;p&gt;C# ServerVariables参数说明&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Url”]&lt;br&gt;返回服务器地址&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Path_Info”]&lt;br&gt;客户端提供的路径信息&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Appl_Physical_Path”]&lt;br&gt;与应用程序元数据库路径相应的物理路径&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Path_Translated”]&lt;br&gt;通过由虚拟至物理的映射后得到的路径&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Script_Name”]&lt;br&gt;执行脚本的名称&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Query_String”]&lt;br&gt;查询字符串內容&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Http_Referer”]&lt;br&gt;请求的字符串內容&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Server_Port”]&lt;br&gt;接受请求的服务器端口号&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Remote_Addr”]&lt;br&gt;发出请求的远程主机的IP地址&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Remote_Host”]&lt;br&gt;发出请求的远程主机名称&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Local_Addr”]&lt;br&gt;返回接受请求的服务器地址&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Http_Host”]&lt;br&gt;返回服务器地址&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Server_Name”]&lt;br&gt;服务器的主机名、DNS地址或IP地址&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Request_Method”]&lt;br&gt;提出请求的方法比如GET、HEAD、POST等等&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Server_Port_Secure”]&lt;br&gt;如果接受请求的服务器端口为安全端口时，则为1，否则为0&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Server_Protocol”]&lt;br&gt;服务器使用的协议的名称和版本&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Server_Software”]&lt;br&gt;应答请求并运行网关的服务器软件的名称和版本&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“All&lt;em&gt;Http”]&lt;br&gt;客户端发送的所有HTTP标头，前缀HTTP&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“All&lt;em&gt;Raw”]&lt;br&gt;客户端发送的所有HTTP标头,其结果和客户端发送时一样，没有前缀HTTP&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Appl_MD_Path”]&lt;br&gt;应用程序的元数据库路径&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Content_Length”]&lt;br&gt;客户端发出內容的长度&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Https”]&lt;br&gt;如果请求穿过安全通道（SSL），则返回ON如果请求来自非安全通道，则返回OFF&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Instance_ID”]&lt;br&gt; IIS实例的ID号&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Instance_Meta_Path”]&lt;br&gt;响应请求的IIS实例的元数据库路径&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Http_Accept_Encoding”]&lt;br&gt;返回內容如：gzip,deflate&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Http_Accept_Language”]&lt;br&gt;返回內容如：en-us&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Http_Connection”]&lt;br&gt;返回內容：Keep-Alive&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Http_Cookie”]&lt;br&gt;返回內容如：nVisiT%&lt;/p&gt;
+&lt;p&gt;2DYum=125;ASPSESSIONIDCARTQTRA=FDOBFFABJGOECBBKHKGPFIJI;ASPSESSIONIDCAQQTSRB=LKJJPLABABILLPCOGJGAMKAM;ASPSESSIONIDACRRSSRA=DK&lt;/p&gt;
+&lt;p&gt;HHHFBBJOJCCONPPHLKGHPB&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Http_User_Agent”]&lt;br&gt;返回內容：Mozilla/4.0(compatible;MSIE6.0;WindowsNT5.1;SV1)&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Https_Keysize”]&lt;br&gt;安全套接字层连接关键字的位数，如128&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Https_Secretkeysize”]&lt;br&gt;服务器验证私人关键字的位数如1024&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Https_Server_Issuer”]&lt;br&gt;服务器证书的发行者字段&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Https_Server_Subject”]&lt;br&gt;服务器证书的主题字段&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Auth_Password”]&lt;br&gt;当使用基本验证模式时，客户在密码对话框中输入的密码&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Auth_Type”]&lt;br&gt;是用户访问受保护的脚本时，服务器用於检验用户的验证方法&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Auth_User”]&lt;br&gt;代证的用户名&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Cookie”]&lt;br&gt;唯一的客户证书ID号&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Flag”]&lt;br&gt;客户证书标誌，如有客户端证书，则bit0为0如果客户端证书验证无效，bit1被设置为1&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Issuer”]&lt;br&gt;用户证书中的发行者字段&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Keysize”]&lt;br&gt;安全套接字层连接关键字的位数，如128&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Secretkeysize”]&lt;br&gt;服务器验证私人关键字的位数如1024&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Serialnumber”]&lt;br&gt;客户证书的序列号字段&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Server_Issuer”]&lt;br&gt;服务器证书的发行者字段&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Server_Subject”]&lt;br&gt;服务器证书的主题字段&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Cert_Subject”]&lt;br&gt;客户端证书的主题字段&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“Content_Type”]&lt;br&gt;客户发送的form內容或HTTPPUT的数据类型&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables[“HTTP_X_FORWARDED_FOR”]&lt;br&gt;可以获得位于代理（网关）后面的直接IP，当然必须这个代理支持&lt;/p&gt;
+&lt;p&gt; 一些被隐藏起来的Request.ServerVariables参数：&lt;br&gt;Request.ServerVariables[“NUMBER_OF_PROCESSORS”]&lt;br&gt; Request.ServerVariables[“OS”]&lt;br&gt; Request.ServerVariables[“WINDIR”]&lt;br&gt; Request.ServerVariables[“TEMP”]&lt;br&gt; Request.ServerVariables[“TMP”]&lt;br&gt; Request.ServerVariables[“ComSpec”]&lt;br&gt; Request.ServerVariables[“Os2LibPath”]&lt;br&gt; Request.ServerVariables[“Path”]&lt;br&gt; Request.ServerVariables[“PATHEXT”]&lt;br&gt; Request.ServerVariables[“PROCESSOR_ARCHITECTURE”]&lt;br&gt; Request.ServerVariables[“PROCESSOR_IDENTIFIER”]&lt;br&gt; Request.ServerVariables[“PROCESSOR_LEVEL”]&lt;br&gt; Request.ServerVariables[“PROCESSOR_REVISION”]&lt;/p&gt;
+&lt;p&gt;本机ip:&amp;lt;%=request.servervariables[“remote_addr”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;服务器名:&amp;lt;%=Request.ServerVariables[“SERVER_NAME”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;服务器IP:&amp;lt;%=Request.ServerVariables[“LOCAL_ADDR”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;服务器端口:&amp;lt;%=Request.ServerVariables[“SERVER_PORT”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;服务器时间:&amp;lt;%=now%&amp;gt;&lt;/p&gt;
+&lt;p&gt; IIS版本:&amp;lt;%=Request.ServerVariables[“SERVER_SOFTWARE”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;脚本超时时间:&amp;lt;%=Server.ScriptTimeout%&amp;gt;&lt;/p&gt;
+&lt;p&gt;本文件路径:&amp;lt;%=server.mappath(Request.ServerVariables[“SCRIPT_NAME”])%&amp;gt;&lt;/p&gt;
+&lt;p&gt;服务器CPU数量:&amp;lt;%=Request.ServerVariables[“NUMBER_OF_PROCESSORS”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;服务器解译引擎:&amp;lt;%=ScriptEngine &amp;amp; “/“&amp;amp; ScriptEngineMajorVersion&amp;amp;”.”&amp;amp;ScriptEngineMinorVersion&amp;amp;”.”&amp;amp; ScriptEngineBuildVersion %&amp;gt;&lt;/p&gt;
+&lt;p&gt;服务器操作系统:&amp;lt;%=Request.ServerVariables[“OS”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;支持的文件类型：&amp;lt;%=Request.ServerVariables[“HTTP_Accept”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;访问的文件路径：&amp;lt;%=Request.ServerVariables[“HTTP_url”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;用户代理的信息：&amp;lt;%=Request.ServerVariables[“HTTP_USER_AGENT”]%&amp;gt;&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables变量意义. http代理相关知识&lt;br&gt;Request.ServerVariables[“HTTP_VIA”]———可以获得用户内部的ip&lt;br&gt; Request.ServerVariables[“HTTP_X_FORWARDED_FOR”]———可以知道代理服务器的服务器名以及端口&lt;br&gt;Request.ServerVariables[“REMOTE_ADDR”]– 发出请求的远程主机的 IP 地址。&lt;/p&gt;
+&lt;p&gt;http代理相关知识&lt;br&gt; 关键就在HTTP_X_FORWARDED_FOR&lt;br&gt;使用不同种类代理服务器，上面的信息会有所不同：&lt;/p&gt;
+&lt;p&gt;一、没有使用代理服务器的情况：&lt;br&gt;REMOTE_ADDR = 您的 IP&lt;br&gt; HTTP_VIA = 没数值或不显示&lt;br&gt;HTTP_X_FORWARDED_FOR = 没数值或不显示&lt;/p&gt;
+&lt;p&gt;二、使用透明代理服务器的情况：Transparent Proxies&lt;br&gt; REMOTE_ADDR = 代理服务器 IP&lt;br&gt; HTTP_VIA = 代理服务器 IP&lt;br&gt; HTTP_X_FORWARDED_FOR = 您的真实 IP&lt;br&gt;这类代理服务器还是将您的信息转发给您的访问对象，无法达到隐藏真实身份的目的。&lt;/p&gt;
+&lt;p&gt;三、使用普通匿名代理服务器的情况：Anonymous Proxies&lt;br&gt; REMOTE_ADDR = 代理服务器 IP&lt;br&gt; HTTP_VIA = &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;客户端ip: &lt;/p&gt;
+&lt;p&gt;Request.ServerVariables.Get(“Remote_Addr”).ToString(); &lt;/p&gt;
+&lt;p&gt;客户端主机名:&lt;/p&gt;
+&lt;p&gt;Request.ServerVariables.Get(“Remote_Host”).T
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://dwflzxj.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="博客，文章" scheme="http://dwflzxj.github.io/tags/%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>CSharp自学巩固笔记1</title>
